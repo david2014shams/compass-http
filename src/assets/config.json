@@ -1,5 +1,5 @@
 {
-  "shoppingUrl": "api/heroes",
+  "shoppingUrl": "https://restcountries.eu/rest/v2/all",
   "jsonFile": "assets/jsonFile.json",
   "countriesUrl": "https://restcountries.eu/rest/v2/all"
 }
