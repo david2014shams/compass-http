@@ -7,20 +7,24 @@ import { LoginComponent } from './login/login.component';
 import { ConfigComponent } from './config/config.component';
 import { ConfigService } from './config.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FlightListComponent } from './flight-list/flight-list.component';
+import { FlightsService } from './flights.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ConfigComponent
+    ConfigComponent,
+    FlightListComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule
   ],
   providers: [
-    ConfigService
+    ConfigService,
+    FlightsService
   ],
   bootstrap: [AppComponent]
 })

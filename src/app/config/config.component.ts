@@ -14,6 +14,10 @@ export class ConfigComponent implements OnInit {
   ngOnInit() {
   }
 
+  getFlights(){
+    
+  }
+
   showConfig() {
     this.configService.getConfig()
       .subscribe((data: Config) => this.config = {
@@ -25,5 +29,5 @@ export class ConfigComponent implements OnInit {
 }
 
 interface Config {
-  
+
 }
