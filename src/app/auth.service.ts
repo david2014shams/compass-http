@@ -10,6 +10,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login(username: string, password: string){
+    /** TODO: read login url from configuration */
     this.url = "http://compassservicesqa-blue.ual.com/ShoppingServices/Api/AuthService/GetLoginStatus/";
     let loginInfo = { "username": username, "password": password };
     let options = {headers: new HttpHeaders({"Content-Type": "application/json"})}
