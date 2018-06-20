@@ -15,6 +15,9 @@ export class FlightListComponent implements OnInit {
     // this.list = this.flights.getFlights();
     this.flights.getFlights();
     this.list = this.flights.countries;
+    console.log(this.flights.countries);
+    this.list = this.flights.getCountries(); // DEBUG does not return observable cannot do .subscribe
+    
   }
 
 }
